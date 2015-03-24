@@ -12,7 +12,11 @@ title: Projects
 - [Cointribute](http://intense-escarpment-3682.herokuapp.com) — Charity platform built upon the advantages of Bitcoin - [(Code)](https://github.com/coin-orado/charity).
 - [BitSplit](http://bit-split.herokuapp.com) — Receipt splitting application for Bitcoin - [(Code)](https://github.com/dawsonbotsford/bitsplit).
 
+## Work
+- [PhET](http://phet.colorado.edu/) - Physics simulations with a focus experimental learning.
+
 ## Class Projects
+- [PassTheGas](https://passthegas.github.io) - Gas cost splitting application with google maps integration.
 - [Cyberbullying](https://cyberbullyingassignment.herokuapp.com) - Explore instagram posts and answer questions to detect cyberbullying.
 
 
