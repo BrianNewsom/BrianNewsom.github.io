@@ -411,8 +411,9 @@ Navigation
     line-height: 1.6;
     color: #999999; }
   .cd-content h1 {
-    margin-left: 5em;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    padding-left: 0px;
+    margin-left: -80%; }
   .cd-content a {
     color: #d35657;
     text-decoration: none; }
