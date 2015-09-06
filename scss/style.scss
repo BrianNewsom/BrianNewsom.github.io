@@ -418,6 +418,16 @@ Navigation
 		line-height: 1.6;
 		color: darken($color-6, 40%);
 	}
+	
+	h1 {
+		margin-left: 5em;
+		font-size: 1.8rem;
+	}
+	
+	a {
+		color: $color-2;
+		text-decoration: none;
+	}
 
 	@include MQ(M) {
 		padding: 4em 0;

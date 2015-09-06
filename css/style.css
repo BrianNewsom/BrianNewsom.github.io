@@ -410,6 +410,12 @@ Navigation
     font-size: 1.4rem;
     line-height: 1.6;
     color: #999999; }
+  .cd-content h1 {
+    margin-left: 5em;
+    font-size: 1.8rem; }
+  .cd-content a {
+    color: #d35657;
+    text-decoration: none; }
   @media only screen and (min-width: 768px) {
     .cd-content {
       padding: 4em 0; }
@@ -448,5 +454,3 @@ Navigation
   @media only screen and (min-width: 480px) {
     #cd-loading-bar {
       left: 90px; } }
-
-/*# sourceMappingURL=style.css.map */
