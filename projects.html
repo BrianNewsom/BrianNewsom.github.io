@@ -5,10 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="css/social.css"> <!-- Social buttons -->
+
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
   	
 	<title>Brian Newsom | Projects</title>
@@ -24,9 +26,9 @@
 			</li>
 
 			<li>
-				<a href="#0" data-menu="services">
+				<a href="#0" data-menu="resume">
 					<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <polyline data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 16,7 16,2 8,2 8,7 " stroke-linejoin="miter"></polyline> <rect x="1" y="7" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="22" height="15" stroke-linejoin="miter"></rect> <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="5" y1="7" x2="5" y2="22" stroke-linejoin="miter"></line> <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="7" x2="19" y2="22" stroke-linejoin="miter"></line> </g></svg>
-					Services
+					Resume
 				</a>
 			</li>
 
@@ -58,25 +60,36 @@
 				<a href="#projects-content" class="cd-scroll">Scroll Down</a>
 			</header>
 
-			<div class="cd-content" id="projects-content">
-				<div id="setstory">
-					<a href="http://SetStory.io"><h1>SetStory</h1></a>
-					<p>
+			<div class="cd-content full" id="projects-content">
+				<div class="slider">
+        <a href="#" class="arrow arrow-prev">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a href="#" class="arrow arrow-next">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+        <div class="slide-wrapper">
+            <div class="slide">
+                <a href="http://setstory.io"><h3 class="text">SetStory</h3></a>
+                <p class="text">
 						For the 2015 <a href="http://www.sxsw.com/music/conference/hackathon">SXSW Music Hackathon Championship</a>, I built SetStory, the ultimate festival analytics and exploration platform.  This product is targeted towards towards music festival planners, estimating ticket sales given artists, and providing a value algorithm to determine the ideal artists for a given festival.
-					</p>
-					<div class="project-image">
-						<img src="img/SetStory.png" alt="SetStory - festival analytics">
-					</div>
-				</div>
-				<div id="givehub">
-					<a href="https://givehub.herokuapp.com"><h1>GiveHub</h1></a>
-					<p>
+                </p>
+								<div class="project-image">
+									<img src="img/SetStory.png" alt="SetStory - festival analytics">
+								</div>
+            </div>
+
+            <div class="slide">
+                <a href="https://givehub.herokuapp.com"><h3 class="text">GiveHub</h3></a>
+                <p class="text">
 						At HackCU 2015, I built GiveHub with two of my best friends.  GiveHub is charity powered by Twitter.  With simply a tweet, you are able to donate to any charity, by handle, that you care about.  GiveHub is built on the Twitter stream API and uses NLP to automatically generate a link with how much the individual says they will donate.  All it takes is a retweet to match a friend's donation.
-					</p>
-					<div class="project-image">
-						<img src="img/GiveHub.png" alt="GiveHub - social giving">
-					</div>
-				</div>
+                </p>
+								<div class="project-image">
+									<img src="img/GiveHub.png" alt="GiveHub - social giving">
+								</div>
+            </div>
+        </div>
+			</div>
 			</div> <!-- .cd-content -->
 		</section> <!-- .cd-section -->
 	</main> <!-- .cd-main -->
