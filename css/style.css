@@ -164,7 +164,7 @@ Navigation
     width: 100%;
     background: #83b0b9;
     overflow: hidden; }
-  .cd-section.services header {
+  .cd-section.resume header {
     background-color: #d35657; }
   .cd-section.projects header {
     background-color: #343943; }
@@ -448,7 +448,7 @@ Navigation
   transform: translateZ(0); }
   #cd-loading-bar.index {
     background-color: #83b0b9; }
-  #cd-loading-bar.services {
+  #cd-loading-bar.resume {
     background-color: #d35657; }
   #cd-loading-bar.projects {
     background-color: #343943; }
@@ -533,9 +533,9 @@ body {
     .slider .arrow > i {
       line-height: 40px; }
     .slider .arrow.arrow-prev {
-      left: -1px; }
+      left: 10px; }
     .slider .arrow.arrow-next {
-      right: -1px; }
+      right: 10px; }
 
 .me {
   display: block;

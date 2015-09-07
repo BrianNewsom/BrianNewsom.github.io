@@ -204,7 +204,7 @@ Navigation
 		overflow: hidden; 
 	}
 
-	&.services header {
+	&.resume header {
 		background-color: $color-2;
 	}
 
@@ -466,7 +466,7 @@ Navigation
 		background-color: $color-1;
 	}
 
-	&.services {
+	&.resume{
 		background-color: $color-2;
 	}
 
@@ -596,11 +596,11 @@ body {
         }
         
         &.arrow-prev{
-            left: -1px;
+            left: 10px;
         }
         
         &.arrow-next{
-            right: -1px;
+            right: 10px;
         }
     }
 }  
