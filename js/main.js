@@ -29,7 +29,6 @@ jQuery(document).ready(function($){
 			sectionTarget = target.data('menu');
 		
 		
-		console.log(target);
 		if( !target.hasClass('selected') && !isAnimating )  {
 			//if user has selected a section different from the one alredy visible - load the new content
 			triggerAnimation(sectionTarget, true);
@@ -40,7 +39,6 @@ jQuery(document).ready(function($){
 
 	//detect the 'popstate' event - e.g. user clicking the back button
   	$(window).on('popstate', function() {
-			console.log($(this));
 	  	if( firstLoad ) {
 	      	var newPageArray = location.pathname.split('/'),
 	        //this is the url of the page to be loaded 
@@ -48,7 +46,7 @@ jQuery(document).ready(function($){
 					if (!currentPage) currentPage = newPage;
 	
 
-					if(currentPage == newPage || currentPage == newPage + "#") { firstLoad = false; console.log('hiiii'); }
+					if(currentPage == newPage || currentPage == newPage + "#") { firstLoad = false; }
 	      	else if( !isAnimating ) triggerAnimation(newPage, false);
 	    }
 	    firstLoad = false;
@@ -121,7 +119,7 @@ jQuery(document).ready(function($){
 				        //if the new page was triggered by a 'popstate' event, don't add it
 				        window.history.pushState({path: url},'',url);
 								projectsSlideJquery();
-								
+								socialPixelate();
 				    }
 				});
 			});
@@ -156,6 +154,7 @@ jQuery(document).ready(function($){
 		}, 1);
 	}
 	projectsSlideJquery();
+	socialPixelate();
 });
 
 function projectsSlideJquery() {
@@ -209,7 +208,6 @@ jQuery(document).ready(function($){
 
 	var blockedClick = false;
 	$('.arrow').click(function(e){
-			console.log('arrow click');
 			e.preventDefault();
 
 			if(blockedClick == false){
@@ -284,4 +282,11 @@ jQuery(document).ready(function($){
 
 	}
 });
+}
+
+function socialPixelate() {
+// add extra elements to buttons for hover, keeps html cleaner
+$('.btn').prepend('<div class="hover"><span></span><span></span><span></span><span></span><span></span></div>');
+
+$('.social-btn').prepend('<div class="hover"><span></span><span></span><span></span><span></span></div>');
 }
