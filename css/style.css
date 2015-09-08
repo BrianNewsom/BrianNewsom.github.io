@@ -469,7 +469,8 @@ Navigation
   line-height: 1.6; }
 
 .project-image img {
-  width: 100%; }
+  width: 100%;
+  padding-top: 200px; }
 
 /* Slider stuff */
 * {

@@ -35,28 +35,23 @@ jQuery(document).ready(function($){
 			triggerAnimation(sectionTarget, true);
 		}
 
-		firstLoad = true;
+		firstLoad = false;
 	});
 
-	var currentPage = "";
 	//detect the 'popstate' event - e.g. user clicking the back button
   	$(window).on('popstate', function() {
 			console.log($(this));
 	  	if( firstLoad ) {
-		    /*
-		    Safari emits a popstate event on page load - check if firstLoad is true before animating
-		    if it's false - the page has just been loaded 
-		    */
 	      	var newPageArray = location.pathname.split('/'),
 	        //this is the url of the page to be loaded 
 	        newPage = newPageArray[newPageArray.length - 1].replace('.html', '');
 					if (!currentPage) currentPage = newPage;
 	
 
-					if(currentPage == newPage) { firstLoad = true; }
+					if(currentPage == newPage || currentPage == newPage + "#") { firstLoad = false; console.log('hiiii'); }
 	      	else if( !isAnimating ) triggerAnimation(newPage, false);
 	    }
-	    firstLoad = true;
+	    firstLoad = false;
 	});
 
   	//scroll to content if user clicks the .cd-scroll icon
@@ -125,6 +120,8 @@ jQuery(document).ready(function($){
 				        //add the new page to the window.history
 				        //if the new page was triggered by a 'popstate' event, don't add it
 				        window.history.pushState({path: url},'',url);
+								projectsSlideJquery();
+								
 				    }
 				});
 			});
@@ -158,7 +155,11 @@ jQuery(document).ready(function($){
 			scaleY: 1
 		}, 1);
 	}
+	projectsSlideJquery();
+});
 
+function projectsSlideJquery() {
+jQuery(document).ready(function($){
 	var $slider = $('.slider'),
 			$wrapper = $slider.find('.slide-wrapper'),
 			$slides = $slider.find('.slide'),
@@ -208,6 +209,7 @@ jQuery(document).ready(function($){
 
 	var blockedClick = false;
 	$('.arrow').click(function(e){
+			console.log('arrow click');
 			e.preventDefault();
 
 			if(blockedClick == false){
@@ -281,5 +283,5 @@ jQuery(document).ready(function($){
 			});
 
 	}
-
 });
+}
