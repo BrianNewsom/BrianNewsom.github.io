@@ -1,7 +1,7 @@
 # BrianNewsom.github.io
 Personal WebPage
 
-*Live at BrianNewsom.me*
+*Live at Brian-Newsom.com*
 
 Built using pure HTML, SCSS, and JS
 
